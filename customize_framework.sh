@@ -10,11 +10,8 @@ SEP_FRAME="framework_ext.jar.out"
 if [ $2 = "$BUILD_OUT/framework" ]
 then
     # remove all files at out/framework those exist in framework_ext.jar.out
-    for file2 in `find framework_ext.jar.out -name *.smali`; do
-            file=${file2/framework_ext.jar.out/$BUILD_OUT\/framework}
-            echo "rm file: $file"
-            rm -rf "$file"
-    done
 
+    rm -rf "$BUILD_OUT/framework/smali/android/filterfw"
+    rm -rf "$BUILD_OUT/framework/smali/android/filterpacks"
     rm -rf "$BUILD_OUT/framework/smali/android/gesture"
 fi
