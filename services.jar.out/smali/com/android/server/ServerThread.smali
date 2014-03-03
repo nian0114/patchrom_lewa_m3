@@ -2447,6 +2447,7 @@
     .restart local v82       #dreamy:Lcom/android/server/dreams/DreamManagerService;
     :cond_a
     :goto_3a
+	
     invoke-static {v5}, Lcom/android/server/ServerThread$Injector;->registerServices(Landroid/content/Context;)V
 
     :goto_lewa_0
@@ -2604,8 +2605,9 @@
 
     .line 852
     :goto_43
-    move-object/from16 v34, v5
+    invoke-static {v5}, Lcom/android/server/ServerThread$Injector;->registerReceivers(Landroid/content/Context;)V
 
+    move-object/from16 v34, v5
     .line 853
     .local v34, contextF:Landroid/content/Context;
     move-object/from16 v35, v99
@@ -4840,5 +4842,5 @@
 
     .end local v101           #networkPolicy:Lcom/android/server/net/NetworkPolicyManagerService;
     .restart local v25       #networkPolicy:Lcom/android/server/net/NetworkPolicyManagerService;
-    goto/16 :goto_3a
+    goto/16 :goto_lewa_0
 .end method
