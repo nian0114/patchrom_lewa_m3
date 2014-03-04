@@ -32,7 +32,8 @@ local-density := XHDPI
 
 # All apps need to be removed from original ZIP file
 local-remove-apps   := Gallery2 Stk Launcher2 VideoEditor PicoTts VoiceDialer \
-		HoloSpiralWallpaper MagicSmokeWallpapers PhaseBeam Galaxy4 NoiseField
+		HoloSpiralWallpaper MagicSmokeWallpapers PhaseBeam Galaxy4 NoiseField \ 
+		Calculator Contacts DeskClock Mms Music PackageInstaller QuickSearchBox SoundRecorder
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
